@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="icon" type="image/x-icon" href="./pictures/faviconV2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo">
+          <img
+            width="46rem"
+            height="36rem"
+            src="./pictures/gs-icon-black.svg"
+            alt="logo"
+          />
+        </div>
+        <div class="topnav">
+          <a href="#">HOME</a>
+          <a href="#">SHOP</a>
+          <a href="#">BLOG</a>
+          <a href="#">CONTACT</a>
+        </div>
+        <div class="dropdown">
+          <i class="fa-solid fa-bars size"></i>
+          <!-- <img src="./pictures/Union.png" alt="" /> -->
+          <div class="dropdown-content">
+            <a href="#">HOME</a>
+            <a href="#">SHOP</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTACT</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-main">
+      <div class="hero-content">
+        <h1>
+          You’ve put in the work.
+          <br />
+          Now show off the results.
+        </h1>
+        <p class="hero-p1">
+          Flex what you’ve built with physique-enhancing cuts,
+          <br />
+          compressive fits and comfortable lifting essentials.
+        </p>
+        <div><button class="hero-btn">SHOP LIFTING</button></div>
+      </div>
+    </section>
+
+    <!-- Display Available Products -->
+    <section id="items">
+      <h2>Our Products</h2>
+      <div class="cards-main">
+
+        <div class="card">
+          <img src="./pictures/shirt1.jpg" alt="" />
+          <div class="description-main">
+            <div class="description">
+              <h4>Sports Seamless T-Shirt</h4>
+              <p>Slim Fit</p>
+              <p>orange Gray</p>
+              <h6>$50</h6>
+            </div>
+            <div class="icon">
+              <button class="icon-btn btn">
+                <i class="fa-solid fa-cart-plus fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./pictures/shirt2.jpg" alt="" />
+          <div class="description-main">
+            <div class="description">
+              <h4>Lifting Club Tank-Top</h4>
+              <p>Slim Fit</p>
+              <p>Sky Blue</p>
+              <h6>$300</h6>
+            </div>
+            <div class="icon">
+              <button class="icon-btn btn">
+                <i class="fa-solid fa-cart-plus fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./pictures/shirt3.jpg" alt="" />
+          <div class="description-main">
+            <div class="description">
+              <h4>Athletic Hoodie</h4>
+              <p>Slim Fit</p>
+              <p>orange Gray</p>
+              <h6>$100</h6>
+            </div>
+            <div class="icon">
+              <button class="icon-btn btn">
+                <i class="fa-solid fa-cart-plus fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./pictures/bottom1.jpg" alt="" />
+          <div class="description-main">
+            <div class="description">
+              <h4>High Performance Leggings</h4>
+              <p>Slim Fit</p>
+              <p>orange Gray</p>
+              <h6>$150</h6>
+            </div>
+            <div class="icon">
+              <button class="icon-btn btn">
+                <i class="fa-solid fa-cart-plus fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./pictures/bottom2.jpg" alt="" />
+          <div class="description-main">
+            <div class="description">
+              <h4>Training Trouser</h4>
+              <p>Slim Fit</p>
+              <p>orange Gray</p>
+              <h6>$250</h6>
+            </div>
+            <div class="icon">
+              <button class="icon-btn btn">
+                <i class="fa-solid fa-cart-plus fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./pictures/bottom3.jpg" alt="" />
+          <div class="description-main">
+            <div class="description">
+              <h4>Gym Shorts</h4>
+              <p>Slim Fit</p>
+              <p>orange Gray</p>
+              <h6>$200</h6>
+            </div>
+            <div class="icon">
+              <button class="icon-btn btn">
+                <i class="fa-solid fa-cart-plus fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Display User's Selected Items -->
+    <section id="cart">
+      <h2>Cart</h2>
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+                <th></th>
+                <th class="item-image"></th>
+                <th class="item-name"><h3>ITEM</h3></th>
+                <th class="item-price"><h3>PRICE</h3></th>
+                <th class="item-quantity"><h3>QUANTITY</h3></th>
+                <th class="item-total"><h3>TOTAL</h3></th>
+                <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td><input type="checkbox"/></td>
+              <td><img src="./pictures/shirt3.jpg" alt=""  class="border-circle"/></td>
+              <td class="item-name-main">
+                <h3 class="item-name">Athletic Hoodie</h3>
+              </td>
+              <td class="item-price"><h3>$100</h3></td>
+              <td class="item-quantity"><input type="number" class="num" value="1"/></td>
+              <td class="item-total"><h3>$100</h3></td>
+              <td><button class="btn-remove">Remove</button></td>
+            </tr> -->
+          </tbody>
+          <!-- <tr>
+            <td></td>
+            <td><img src="" width="40" alt="" /></td>
+            <td>
+              <h3 class="big"><strong>Grand Total</strong></h3>
+            </td>
+            <td><h3></h3></td>
+            <td><h3></h3></td>
+            <td class="grand-total">
+              <h3><strong>$0</strong></h3>
+            </td>
+          </tr> -->
+        </table>
+      </div>
+    </section>
+
+
+    <section id="total">
+      <table class="table">
+        <tr>
+          <td></td>
+          <td><img src="" width="40" alt="" /></td>
+          <td>
+            <h3 class="big"><strong>Grand Total</strong></h3>
+          </td>
+          <td><h3></h3></td>
+          <td><h3></h3></td>
+          <td class="grand-total">
+            <h3><strong>$0</strong></h3>
+          </td>
+        </tr>
+      </table>
+    </section>
+  
+
+    <footer>
+      &copy;2023 | Gymshark Limited | United We Sweat`,
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
